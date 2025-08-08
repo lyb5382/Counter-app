@@ -5,7 +5,9 @@ const Controller = ({ onClickButton }) => {
     return (
         <div>
             {buttonValues.map((btn, i) =>
-                <button onClick={onClickButton(btn)} key={i}>{btn > 0 ? `+${btn}` : btn}</button>
+                <button onClick={() => onClickButton(btn)} key={i}>
+                    {btn > 0 ? `+${btn}` : btn}
+                </button>
             )}
         </div>
     )
