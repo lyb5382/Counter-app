@@ -11,7 +11,7 @@
 }
 .timer-status {
     font-size: 1em;
-    color: #666;
+    color: dimgray;
 }
 .timer-status.running {
     color: olivedrab;
